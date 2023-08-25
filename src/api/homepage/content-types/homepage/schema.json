@@ -19,6 +19,18 @@
       "relation": "oneToMany",
       "target": "api::navbar.navbar",
       "mappedBy": "homepage"
+    },
+    "leftcontents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::leftcontent.leftcontent",
+      "mappedBy": "homepage"
+    },
+    "right_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::right-content.right-content",
+      "mappedBy": "homepage"
     }
   }
 }

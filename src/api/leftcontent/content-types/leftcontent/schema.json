@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leftcontents",
+  "info": {
+    "singularName": "leftcontent",
+    "pluralName": "leftcontents",
+    "displayName": "leftcontent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Button1": {
+      "type": "string"
+    },
+    "Button2": {
+      "type": "string"
+    },
+    "Button3": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "leftcontents"
+    }
+  }
+}
