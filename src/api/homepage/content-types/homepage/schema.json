@@ -43,6 +43,12 @@
       "relation": "oneToMany",
       "target": "api::section4.section4",
       "mappedBy": "homepage"
+    },
+    "section_6s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section6.section6",
+      "mappedBy": "homepage"
     }
   }
 }

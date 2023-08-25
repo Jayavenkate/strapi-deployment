@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section6s",
+  "info": {
+    "singularName": "section6",
+    "pluralName": "section6s",
+    "displayName": "section6"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "section_6s"
+    }
+  }
+}
