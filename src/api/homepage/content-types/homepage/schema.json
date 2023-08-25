@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navbars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar",
+      "mappedBy": "homepage"
+    }
+  }
+}
