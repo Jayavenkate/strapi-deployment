@@ -79,6 +79,18 @@
       "relation": "oneToMany",
       "target": "api::section11.section11",
       "mappedBy": "homepage"
+    },
+    "footers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footer.footer",
+      "mappedBy": "homepage"
+    },
+    "footerpages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footerpage.footerpage",
+      "mappedBy": "homepage"
     }
   }
 }

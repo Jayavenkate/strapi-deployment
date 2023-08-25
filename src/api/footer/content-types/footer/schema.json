@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "mailtext": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "footerbottomcontent": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "footers"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footerpages",
+  "info": {
+    "singularName": "footerpage",
+    "pluralName": "footerpages",
+    "displayName": "footerpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "nav1": {
+      "type": "string"
+    },
+    "nav2": {
+      "type": "string"
+    },
+    "nav3": {
+      "type": "string"
+    },
+    "nav4": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "footerpages"
+    }
+  }
+}
