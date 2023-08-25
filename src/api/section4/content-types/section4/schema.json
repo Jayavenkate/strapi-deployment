@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section4s",
+  "info": {
+    "singularName": "section4",
+    "pluralName": "section4s",
+    "displayName": "section4"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "buttontext": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "reviewtext": {
+      "type": "string"
+    },
+    "reviewsubcontent": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "section_4s"
+    }
+  }
+}

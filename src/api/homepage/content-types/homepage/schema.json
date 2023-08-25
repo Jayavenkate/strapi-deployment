@@ -31,6 +31,18 @@
       "relation": "oneToMany",
       "target": "api::right-content.right-content",
       "mappedBy": "homepage"
+    },
+    "section_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section3.section3",
+      "mappedBy": "homepage"
+    },
+    "section_4s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section4.section4",
+      "mappedBy": "homepage"
     }
   }
 }
