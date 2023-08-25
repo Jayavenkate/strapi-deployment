@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section10s",
+  "info": {
+    "singularName": "section10",
+    "pluralName": "section10s",
+    "displayName": "section10"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "buttontext": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "frame6header": {
+      "type": "string"
+    },
+    "frame6description": {
+      "type": "string"
+    },
+    "frame6button": {
+      "type": "string"
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "section_10s"
+    }
+  }
+}
